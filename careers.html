@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Join the team at Baseline Surveys & Locating Services. Submit your application today." />
+  <title>Careers | Baseline Surveys & Locating Services</title>
+  <link rel="stylesheet" href="css/style.css" />
+   <link rel="icon" href="images/BaselineLogo.png" />
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="top-bar">
+      <p>
+        <a href="tel:+19704537155">(970) 453-7155</a> |
+        <a href="mailto:baselinesurveys@gmail.com">baselinesurveys@gmail.com</a> |
+        <a href="tel:+14439743952">(443) 974-3952</a> |
+        <a href="mailto:baselinelocating@gmail.com">baselinelocating@gmail.com</a> |
+        <a href="https://maps.google.com/?q=13541+CO-9,+Breckenridge,+CO+80424" target="_blank">13541 CO-9, Breckenridge, CO 80424</a>
+      </p>
+    </div>
+    <nav class="navbar">
+      <div class="logo">Baseline Surveys & Locating Services</div>
+<ul class="nav-links" id="dynamic-nav">
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <li class="dropdown">
+  <a href="services.html">Services</a>
+  <ul class="dropdown-content">
+    <li><a href="services.html#boundary">Boundary Surveys</a></li>
+    <li><a href="services.html#alta">ALTA/NSPS Surveys</a></li>
+    <li><a href="services.html#construction">Construction Staking</a></li>
+    <li><a href="utility.html">Utility Locating</a></li>
+  </ul>
+</li>
+  <a href="quote.html">Request a Quote</a>
+  <a href="contact.html">Contact</a>
+  <a href="utility.html">Utility Locating</a>
+  <a href="ourteam.html">Our Team</a>
+  <a href="careers.html">Careers</a>
+  <a href="testimonials.html">Testimonials</a>
+
+</ul>
+
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero contact-hero" style="background-image: url('images/image4.jpeg');">
+    <div class="hero-content contact-hero-text">
+      <h1>Careers at Baseline</h1>
+      <p>Join our growing team of land surveying and utility locating professionals.</p>
+    </div>
+  </section>
+
+  <!-- CAREERS FORM SECTION -->
+  <section class="container">
+    <h2>Submit Your Application</h2>
+    <div class="career-flex">
+      <img src="images/image5.jpeg" alt="Team in the field" class="career-side-img" />
+
+      <form action="https://formspree.io/f/mkgraykk" method="POST" id="careerForm" class="career-form">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" required />
+          </div>
+          <div class="form-group">
+            <label for="position">Position Applying For</label>
+            <input type="text" id="position" name="position" required />
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="message">Message or Cover Letter</label>
+          <textarea id="message" name="message" rows="5" placeholder="Tell us why you’re a great fit..."></textarea>
+        </div>
+        <div class="form-group">
+          <label for="resume">Attach Resume (optional)</label>
+          <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx" />
+        </div>
+        <button type="submit" class="btn">Send Application</button>
+      </form>
+
+      <img src="images/image6.jpeg" alt="Survey equipment" class="career-side-img" />
+    </div>
+  </section>
+  <style>
+      .career-flex {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        gap: 32px;
+        flex-wrap: wrap;
+      }
+      .career-side-img {
+        flex: 1 1 180px;
+        max-width: 260px;
+        min-width: 120px;
+        width: 22vw;
+        height: auto;
+        border-radius: 8px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+        object-fit: cover;
+        margin: 0 0 16px 0;
+        align-self: flex-start;
+      }
+      .career-form {
+        flex: 2 1 340px;
+        min-width: 260px;
+        max-width: 420px;
+        width: 100%;
+        background: #f8f9fa;
+        padding: 28px 24px;
+        border-radius: 8px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+        margin: 0 0 16px 0;
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+      }
+      .form-row {
+        display: flex;
+        gap: 18px;
+      }
+      .form-group {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+      }
+      .career-form label {
+        font-weight: 500;
+        margin-bottom: 4px;
+      }
+      .career-form input[type="text"],
+      .career-form input[type="email"],
+      .career-form input[type="tel"],
+      .career-form input[type="file"],
+      .career-form textarea {
+        padding: 8px 10px;
+        border: 1px solid #bfc9d1;
+        border-radius: 4px;
+        font-size: 1em;
+        margin-bottom: 6px;
+        background: #fff;
+      }
+      .career-form textarea {
+        resize: vertical;
+      }
+      .career-form input[type="file"] {
+        padding: 2px 0;
+        background: none;
+      }
+      .career-form .btn {
+        margin-top: 8px;
+        width: 100%;
+      }
+      @media (max-width: 700px) {
+        .form-row {
+          flex-direction: column;
+          gap: 0;
+        }
+      }
+    </style>
+
+  <!-- FOOTER -->
+ <footer>
+  <div class="container">
+    <p>&copy; 2025 Baseline Surveys & Locating Services | Breckenridge, CO</p>
+    <p>
+      <a href="tel:+19704537155">(970) 453-7155</a> |
+      <a href="mailto:baselinesurveys@gmail.com">baselinesurveys@gmail.com</a>
+    </p>
+    <p>
+      <a href="tel:+14439743952">(443) 974-3952</a> |
+      <a href="mailto:baselinelocating@gmail.com">baselinelocating@gmail.com</a>
+    </p>
+    <div class="leica-logo-wrapper">
+      <a href="https://leica-geosystems.com" target="_blank" rel="noopener">
+        <img src="images/leica.jpeg" alt="Leica Geosystems" class="leica-logo" />
+      </a>
+        <img src="images/BaselineLogo.png" alt="Baseline logo" class="site-logo-footer" />
+    </div>
+  </div>
+</footer>
+  <!-- Link to JS -->
+  <script src="js/careers.js"></script>
+
+</body>
+</html>

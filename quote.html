@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Request a land survey quote from Baseline Land Surveying in Breckenridge, CO." />
+  <title>Request a Quote | Baseline Land Surveying</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" href="images/BaselineLogo.png" />
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="top-bar">
+      <p>
+        <a href="tel:+19704537155">(970) 453-7155</a> |
+        <a href="mailto:baselinesurveys@gmail.com">baselinesurveys@gmail.com</a> |
+        <a href="tel:+14439743952">(443) 974-3952</a> |
+        <a href="mailto:baselinelocating@gmail.com">baselinelocating@gmail.com</a> |
+        <a href="https://maps.google.com/?q=13541+CO-9,+Breckenridge,+CO+80424" target="_blank">
+  13541 CO-9, Breckenridge, CO 80424
+</a>
+      </p>
+    </div>
+    <nav class="navbar">
+      <div class="logo">Baseline Land Surveying</div>
+      <ul class="nav-links" id="dynamic-nav">
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+   <li class="dropdown">
+  <a href="services.html">Services</a>
+  <ul class="dropdown-content">
+    <li><a href="services.html#boundary">Boundary Surveys</a></li>
+    <li><a href="services.html#alta">ALTA/NSPS Surveys</a></li>
+    <li><a href="services.html#construction">Construction Staking</a></li>
+    <li><a href="utility.html">Utility Locating</a></li>
+  </ul>
+</li>
+  <a href="quote.html">Request a Quote</a>
+  <a href="contact.html">Contact</a>
+  <a href="utility.html">Utility Locating</a>
+  <a href="ourteam.html">Our Team</a>
+  <a href="careers.html">Careers</a>
+  <a href="testimonials.html">Testimonials</a>
+
+</ul>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+<section class="hero quote-hero">
+  <div class="hero-content quote-hero-text">
+    <h1>Request a Quote</h1>
+    <p>Let us know about your project and we’ll get back to you with a custom estimate.</p>
+  </div>
+</section>
+
+  <!-- ABOUT: Land Surveying in Colorado (estimates) -->
+  <section class="container">
+    <h2>About Land Surveying in Colorado</h2>
+    <p>Surveying in Colorado often includes additional considerations such as steep or remote terrain, elevation differences, and seasonal access (snow). These factors can affect the time and cost of a survey. Below are ballpark ranges to help with planning; exact pricing depends on property size, site access, deliverables, and required research.</p>
+    <ul>
+      <li><strong>Boundary Survey (residential):</strong> $600 – $3,500 — small, accessible lots on the low end; steep, rural, heavily wooded, or complicated boundary histories toward the top end.</li>
+      <li><strong>Topographic Survey:</strong> $800 – $4,000 depending on area size and contour detail required.</li>
+      <li><strong>ALTA/NSPS Survey (commercial):</strong> $2,000 – $10,000+ depending on parcel size, title/record research, and lender requirements.</li>
+      <li><strong>Construction Staking:</strong> $1,000 – $7,000+ depending on project scope and duration.</li>
+  <li><em>Additional services</em> like utility locating and as-built mapping are quoted separately.</li>
+    </ul>
+    <p style="font-size:0.95em;color:#333;margin-top:8px;">Include as much project detail as possible in the form so we can recommend the right survey type and provide an accurate estimate.</p>
+  </section>
+
+  <!-- QUOTE FORM -->
+  <section class="container">
+    <form action="https://formspree.io/f/meogwnvz" method="POST">
+      <label for="name">Full Name</label><br />
+      <input type="text" id="name" name="name" required /><br /><br />
+
+      <label for="email">Email</label><br />
+      <input type="email" id="email" name="email" required /><br /><br />
+
+      <label for="phone">Phone Number</label><br />
+      <input type="tel" id="phone" name="phone" required /><br /><br />
+
+      <label for="property">Property Address</label><br />
+      <input type="text" id="property" name="property" required /><br /><br />
+
+      <label for="type">Survey Type</label><br />
+      <select id="type" name="type" required>
+        <option value="">-- Select One --</option>
+        <option value="boundary">Boundary Survey</option>
+        <option value="topographic">Topographic Survey</option>
+        <option value="alta">ALTA/NSPS Survey</option>
+        <option value="staking">Construction Staking</option>
+        <option value="elevation">Elevation Certificate</option>
+        <option value="other">Other</option>
+      </select><br /><br />
+
+      <label for="notes">Additional Notes</label><br />
+      <textarea id="notes" name="notes" rows="5" placeholder="Tell us more about your project..."></textarea><br /><br />
+
+      <input type="submit" value="Submit Request" class="btn" />
+	  
+	  <!-- Form Success --!>
+	  
+    </form>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+  <div class="container">
+    <p>&copy; 2025 Baseline Surveys & Locating Services | Breckenridge, CO</p>
+    <p>
+      <a href="tel:+19704537155">(970) 453-7155</a> |
+      <a href="mailto:baselinesurveys@gmail.com">baselinesurveys@gmail.com</a>
+    </p>
+    <p>
+      <a href="tel:+14439743952">(443) 974-3952</a> |
+      <a href="mailto:baselinelocating@gmail.com">baselinelocating@gmail.com</a>
+    </p>
+    <div class="leica-logo-wrapper">
+      <a href="https://leica-geosystems.com" target="_blank" rel="noopener">
+        <img src="images/leica.jpeg" alt="Leica Geosystems" class="leica-logo" />
+      </a>
+    </div>
+  </div>
+</footer>
+<script src="js/scripts.js"></script>
+</body>
+</html>
