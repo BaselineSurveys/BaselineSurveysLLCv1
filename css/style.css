@@ -56,9 +56,8 @@ a:hover {
 }
 
 .container {
-  max-width: 1120px;
+  width: min(1120px, 100% - 2rem);
   margin: 0 auto;
-  padding: 0 var(--pad);
 }
 
 .section {
@@ -232,8 +231,7 @@ header {
   font-size: 0.9em;
 }
 
-.utility-section .container,
-.utility-contact {
+.utility-section .container {
   background: var(--panel);
   border: 1px solid var(--border);
   border-radius: var(--radius);
@@ -242,6 +240,15 @@ header {
   box-shadow: var(--shadow);
   padding: var(--gap) var(--pad);
   margin: var(--gap) 0;
+}
+
+.utility-section {
+  display: flex;
+  justify-content: center;
+}
+
+.utility-section .container {
+  margin: 0 auto;
 }
 
 .contact-card {
