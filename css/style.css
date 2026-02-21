@@ -498,24 +498,27 @@ img {
   margin-bottom: var(--gap);
 }
 
+/* Grid layout: desktop >= 992px uses 3 columns image | form | image */
 .page-careers .career-flex {
   display: grid;
-  grid-template-columns: 1fr auto 1fr;
-  gap: 20px;
+  grid-template-columns: minmax(180px, 1fr) minmax(320px, 640px) minmax(180px, 1fr);
+  gap: clamp(16px, 2vw, 28px);
   align-items: start;
   justify-items: center;
+  width: 100%;
+  overflow: hidden;
 }
 
 .page-careers .career-side-img {
   width: 100%;
-  max-width: 300px;
   height: auto;
-  aspect-ratio: 4/3;
+  display: block;
   object-fit: cover;
   border-radius: 14px;
   border: 1px solid rgba(255, 255, 255, 0.14);
   filter: saturate(0.85) contrast(1.05) brightness(0.75);
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+  min-width: 160px; /* prevent images from collapsing too small */
 }
 
 .page-careers .career-form {
@@ -529,19 +532,18 @@ img {
   flex-direction: column;
   gap: 18px;
   width: 100%;
-  max-width: 400px;
-  min-width: 280px;
+  max-width: 720px;
 }
 
 .page-careers .form-row {
   display: flex;
-  gap: 12px;
+  gap: 16px;
+  align-items: stretch;
 }
 
-.page-careers .form-group {
-  display: flex;
-  flex-direction: column;
-  flex: 1;
+.page-careers .form-row .form-group {
+  flex: 1 1 0;
+  min-width: 0; /* prevents overflow from long inputs */
 }
 
 .page-careers .career-form label {
@@ -563,17 +565,6 @@ img {
   font-size: 1em;
 }
 
-.page-careers .career-form input::placeholder,
-.page-careers .career-form textarea::placeholder {
-  color: rgba(233, 238, 243, 0.55);
-}
-
-.page-careers .career-form input:focus,
-.page-careers .career-form textarea:focus {
-  outline: 2px solid rgba(255, 255, 255, 0.28);
-  outline-offset: 2px;
-}
-
 .page-careers .career-form textarea {
   resize: vertical;
   min-height: 100px;
@@ -593,26 +584,50 @@ img {
   cursor: pointer;
   transition: background 0.2s;
   width: 100%;
-  margin-top: 0;
 }
 
 .page-careers .career-form .btn:hover {
   background: rgba(255, 255, 255, 0.12);
 }
 
-@media (max-width: 860px) {
+/* Tablet and below: single column stacked layout (< 992px) */
+@media (max-width: 992px) {
   .page-careers .career-flex {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+    grid-template-columns: 1fr;
+    gap: 18px;
+    padding: 0 12px;
+  }
+
+  .page-careers .career-side-img {
+    max-height: 360px;
+    width: 100%;
+    object-position: center;
   }
 
   .page-careers .career-form {
-    order: -1; /* Form first on mobile */
+    max-width: 100%;
+    padding: 0;
   }
+}
 
+/* Mobile: force form-row to stack vertically under 768px */
+@media (max-width: 768px) {
   .page-careers .form-row {
     flex-direction: column;
-    gap: 0;
   }
+
+  .page-careers .form-row .form-group {
+    width: 100%;
+  }
+
+  .page-careers .career-side-img {
+    min-height: 120px;
+  }
+}
+
+/* Prevent any horizontal overflow from children */
+.page-careers .career-flex,
+.page-careers .career-flex * {
+  max-width: 100%;
+  box-sizing: border-box;
 }
