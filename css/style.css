@@ -127,6 +127,22 @@ header {
   background: var(--panel-strong);
 }
 
+.nav-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: var(--text);
+  padding: 8px 12px;
+  border-radius: 4px;
+  transition: background 0.3s;
+}
+
+.nav-toggle:hover {
+  background: var(--panel-strong);
+}
+
 .hero {
   position: relative;
   min-height: 50vh;
@@ -686,6 +702,10 @@ img {
     align-items: center;
   }
 
+  .nav-toggle {
+    display: block;
+  }
+
   .nav-links {
     position: absolute;
     top: 100%;
@@ -695,13 +715,21 @@ img {
     background: rgba(255, 255, 255, 0.95);
     z-index: 1000;
     overflow-y: auto;
-    display: flex;
+    display: none;
     flex-direction: column;
     gap: 10px;
     align-items: center;
     padding: 20px;
     box-sizing: border-box;
     max-height: 70vh;
+  }
+
+  body.menu-open .nav-links {
+    display: flex;
+  }
+
+  body.menu-open {
+    overflow: hidden;
   }
 
   .nav-links a {

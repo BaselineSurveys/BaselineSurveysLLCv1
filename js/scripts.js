@@ -1,5 +1,39 @@
-// Show scroll-to-top button
+// Mobile menu toggle
 document.addEventListener("DOMContentLoaded", function () {
+  const navToggle = document.querySelector('.nav-toggle');
+  const navMenu = document.getElementById('mobile-menu');
+
+  if (navToggle && navMenu) {
+    navToggle.addEventListener('click', function () {
+      const isOpen = document.body.classList.toggle('menu-open');
+      navToggle.setAttribute('aria-expanded', isOpen);
+    });
+
+    // Close menu on link click
+    navMenu.addEventListener('click', function (e) {
+      if (e.target.tagName === 'A') {
+        document.body.classList.remove('menu-open');
+        navToggle.setAttribute('aria-expanded', 'false');
+      }
+    });
+
+    // Close menu on outside click
+    document.addEventListener('click', function (e) {
+      if (!navToggle.contains(e.target) && !navMenu.contains(e.target)) {
+        document.body.classList.remove('menu-open');
+        navToggle.setAttribute('aria-expanded', 'false');
+      }
+    });
+
+    // Close menu on Escape
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape') {
+        document.body.classList.remove('menu-open');
+        navToggle.setAttribute('aria-expanded', 'false');
+      }
+    });
+  }
+});
   // Scroll to top button logic
   const scrollBtn = document.createElement("button");
   scrollBtn.innerText = "↑";
