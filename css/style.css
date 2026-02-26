@@ -122,9 +122,16 @@ footer p a + a {
 }
 
 .logo {
-  height: 50px;
+  height: 60px;
   width: auto;
+  max-width: 100%;
   object-fit: contain;
+}
+
+@media (max-width: 768px) {
+  .logo {
+    height: 40px;
+  }
 }
 
 .nav-links {
