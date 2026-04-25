@@ -601,26 +601,36 @@ img {
 @media (max-width: 860px) {
   .split-landing {
     grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    gap: 1.25rem;
+    padding: 1.5rem 1rem;
   }
 
+  .surveying-pane,
+  .utility-pane,
   .contacts-pane {
     grid-column: auto;
+    grid-row: auto;
   }
 
   .split-landing .pane {
-    padding: 2.5rem 1.5rem;
+    padding: 1rem;
     display: block;
   }
 
   .split-landing .pane .pane-overlay {
     text-align: center;
+    width: 100%;
+    max-width: none;
   }
 
   .split-landing .pane .pane-media {
-    position: static;
+    position: relative;
     width: 100%;
-    max-width: 100%;
-    margin: 0 auto 2rem auto;
+    height: auto;
+    aspect-ratio: 16 / 9;
+    margin: 0 0 1rem 0;
+    border-radius: 14px;
   }
 
   .top-bar {
