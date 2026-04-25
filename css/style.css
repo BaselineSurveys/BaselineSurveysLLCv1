@@ -69,8 +69,8 @@ a:hover {
   background: var(--panel);
   border: 1px solid var(--border);
   border-radius: var(--radius);
-  backdrop-filter: blur(14px);
   -webkit-backdrop-filter: blur(14px);
+  backdrop-filter: blur(14px);
   box-shadow: var(--shadow);
 }
 
@@ -84,8 +84,8 @@ header {
   z-index: 100;
   background: rgba(255, 255, 255, 0.2);
   border-bottom: 1px solid var(--border);
-  backdrop-filter: blur(14px);
   -webkit-backdrop-filter: blur(14px);
+  backdrop-filter: blur(14px);
 }
 
 .top-bar {
@@ -126,6 +126,26 @@ footer p a + a {
   width: auto;
   max-width: 100%;
   object-fit: contain;
+}
+
+#scrollTopBtn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 10px 15px;
+  border: none;
+  background: #5a4635;
+  color: #fff;
+  border-radius: 50%;
+  cursor: pointer;
+  display: none;
+  font-size: 18px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  z-index: 110;
+}
+
+#scrollTopBtn.is-visible {
+  display: block;
 }
 
 @media (max-width: 768px) {
@@ -186,6 +206,33 @@ footer p a + a {
   background-position: center;
 }
 
+.hero--about {
+  background-image: url('../images/image10.jpeg');
+  background-position: center 65%;
+}
+
+.hero--careers {
+  background-image: url('../images/image4.jpeg');
+}
+
+.hero--contact {
+  background-image: url('../images/image9.jpeg');
+  background-position: center 65%;
+}
+
+.hero--services {
+  background-image: url('../images/image8.jpeg');
+}
+
+.hero--testimonials {
+  background-image: url('../images/image9.jpeg');
+  background-position: center 65%;
+}
+
+.hero--utility {
+  background-image: url('../images/image7.jpeg');
+}
+
 .hero::before {
   content: '';
   position: absolute;
@@ -214,8 +261,8 @@ footer p a + a {
   background: var(--panel);
   border: 1px solid var(--border);
   border-radius: var(--radius);
-  backdrop-filter: blur(14px);
   -webkit-backdrop-filter: blur(14px);
+  backdrop-filter: blur(14px);
   box-shadow: var(--shadow);
 }
 
@@ -229,8 +276,8 @@ footer p a + a {
   background: var(--panel);
   border: 1px solid var(--border);
   border-radius: var(--radius);
-  backdrop-filter: blur(14px);
   -webkit-backdrop-filter: blur(14px);
+  backdrop-filter: blur(14px);
   box-shadow: var(--shadow);
 }
 
@@ -248,8 +295,8 @@ footer p a + a {
   background: var(--panel);
   border: 1px solid var(--border);
   border-radius: var(--radius);
-  backdrop-filter: blur(14px);
   -webkit-backdrop-filter: blur(14px);
+  backdrop-filter: blur(14px);
   box-shadow: var(--shadow);
   padding: var(--gap) var(--pad);
   margin: var(--gap) 0;
@@ -258,6 +305,39 @@ footer p a + a {
 .utility-section {
   display: flex;
   justify-content: center;
+}
+
+.center-align {
+  text-align: center;
+}
+
+.pad-top-20 {
+  padding-top: 20px;
+}
+
+.pad-20 {
+  padding: 20px;
+}
+
+.contact-info-section {
+  max-width: 700px;
+  margin: auto;
+  text-align: center;
+}
+
+.bio-heading {
+  font-size: 1.1em;
+}
+
+.quote-note {
+  font-size: 0.95em;
+  color: #fff;
+  margin-top: 8px;
+}
+
+.testimonials-subnote {
+  margin-top: 10px;
+  color: #555;
 }
 
 .utility-section .container {
@@ -308,8 +388,8 @@ button:hover, .btn:hover {
 footer {
   background: var(--panel);
   border-top: 1px solid var(--border);
-  backdrop-filter: blur(14px);
   -webkit-backdrop-filter: blur(14px);
+  backdrop-filter: blur(14px);
   text-align: center;
   padding: var(--pad);
 }
@@ -393,8 +473,8 @@ img {
   border-radius: 20px;
   padding: 3rem;
   background: rgba(255,255,255,0.05);
-  backdrop-filter: blur(18px);
   -webkit-backdrop-filter: blur(18px);
+  backdrop-filter: blur(18px);
   border: 1px solid rgba(255,255,255,0.08);
   box-shadow: 0 10px 40px rgba(0,0,0,0.35);
   transition: 0.3s ease;
@@ -419,10 +499,6 @@ img {
   object-fit: cover;
   object-position: center;
   display: block;
-}
-
-.split-landing .pane:hover {
-  transform: translateY(-6px);
 }
 
 /* Ensure overlay content stays above images and divider */
@@ -457,8 +533,8 @@ img {
   max-width: 500px;
   width: 100%;
   margin: 0 auto;
-  backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
   border: 1px solid var(--border);
   box-shadow: var(--shadow);
   z-index: 2; /* ensure overlay content sits above divider */
@@ -512,8 +588,8 @@ img {
   background: var(--panel);
   border: 1px solid var(--border);
   border-radius: var(--radius);
-  backdrop-filter: blur(14px);
   -webkit-backdrop-filter: blur(14px);
+  backdrop-filter: blur(14px);
   z-index: 2;
 }
 
@@ -558,7 +634,7 @@ img {
 }
 
 /* Careers Page Styles */
-.page-careers .container:has(.career-flex) {
+.page-careers .career-section {
   max-width: 1120px;
   margin: 0 auto;
   padding: var(--pad);
@@ -828,3 +904,4 @@ img {
   max-width: 100%;
   box-sizing: border-box;
 }
+

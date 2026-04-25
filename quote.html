@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- CAPTCHA START -->
+  <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
+  <!-- CAPTCHA END -->
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Request a land survey quote from Baseline Surveys in Summit County. Serving Breckenridge, Frisco, Silverthorne, Keystone, Dillon, Kremmling, Granby, Fairplay and surrounding Colorado areas." />
@@ -57,8 +60,7 @@
       <li><strong>Construction Staking:</strong> $1,000 – $7,000+ depending on project scope and duration.</li>
   <li><em>Additional services</em> like as-built mapping are quoted separately.</li>
     </ul>
-    <p style="font-size:0.95em;color:#fff;margin-top:8px;">Include as much project detail as possible in the form so we can recommend the right survey type and provide an accurate estimate.</p>
-    <p><a href="utility.html">Looking for a utility locate?</a></p>
+    <p class="quote-note">Include as much project detail as possible in the form so we can recommend the right survey type and provide an accurate estimate.</p>
   </section>
 
   <!-- QUOTE FORM -->
@@ -90,9 +92,16 @@
       <label for="notes">Additional Notes</label><br />
       <textarea id="notes" name="notes" rows="5" placeholder="Tell us more about your project..."></textarea><br /><br />
 
+      <!-- CAPTCHA START -->
+      <div>
+        <div class="cf-turnstile" data-sitekey="0x4AAAAAAAADDPfG9Hj68VdTik"></div>
+      </div>
+      <input type="text" name="_gotcha" hidden title="Leave this field empty" tabindex="-1" autocomplete="off" />
+      <!-- CAPTCHA END -->
+
       <input type="submit" value="Submit Request" class="btn" />
 	  
-	  <!-- Form Success --!>
+    <!-- Form Success -->
 	  
     </form>
   </section>
@@ -109,8 +118,8 @@
       <a href="mailto:baselinesurveys@gmail.com">baselinesurveys@gmail.com</a>
     </div>
     <div class="footer-logos">
-      <img src="images/BaselineLogo2-2026.jpg" alt="Baseline Logo" />
-      <img src="images/leica.jpeg" alt="Leica Geosystems" />
+      <img src="images/BaselineLogo2-2026.jpg" alt="Baseline Logo" loading="lazy" decoding="async" />
+      <img src="images/leica.jpeg" alt="Leica Geosystems" loading="lazy" decoding="async" />
     </div>
     </div>
 </footer>

@@ -41,42 +41,31 @@ document.addEventListener("DOMContentLoaded", function () {
   const scrollBtn = document.createElement("button");
   scrollBtn.innerText = "↑";
   scrollBtn.id = "scrollTopBtn";
+  scrollBtn.type = "button";
+  scrollBtn.setAttribute("aria-label", "Back to top");
+  scrollBtn.title = "Back to top";
   document.body.appendChild(scrollBtn);
 
-  scrollBtn.style.position = "fixed";
-  scrollBtn.style.bottom = "20px";
-  scrollBtn.style.right = "20px";
-  scrollBtn.style.padding = "10px 15px";
-  scrollBtn.style.border = "none";
-  scrollBtn.style.background = "#5A4635";
-  scrollBtn.style.color = "#fff";
-  scrollBtn.style.borderRadius = "50%";
-  scrollBtn.style.cursor = "pointer";
-  scrollBtn.style.display = "none";
-  scrollBtn.style.fontSize = "18px";
-  scrollBtn.style.boxShadow = "0 2px 5px rgba(0,0,0,0.2)";
-  scrollBtn.title = "Back to top";
+  let scrollTicking = false;
+  const updateScrollButton = function () {
+    scrollBtn.classList.toggle("is-visible", window.scrollY > 300);
+    scrollTicking = false;
+  };
 
-  window.addEventListener("scroll", function () {
-    scrollBtn.style.display = window.scrollY > 300 ? "block" : "none";
-  });
+  window.addEventListener(
+    "scroll",
+    function () {
+      if (!scrollTicking) {
+        scrollTicking = true;
+        window.requestAnimationFrame(updateScrollButton);
+      }
+    },
+    { passive: true }
+  );
+
+  updateScrollButton();
 
   scrollBtn.addEventListener("click", function () {
     window.scrollTo({ top: 0, behavior: "smooth" });
   });
-
-  const observer = new IntersectionObserver(function (entries) {
-    entries.forEach(function (entry) {
-      if (entry.isIntersecting) {
-        entry.target.classList.add("fade-in");
-      }
-    });
-  });
-
-  document
-    .querySelectorAll(".container, .hero, .team-member, .service-item, .utility-service")
-    .forEach(function (el) {
-      el.classList.add("fade-in-observer");
-      observer.observe(el);
-    });
 });
