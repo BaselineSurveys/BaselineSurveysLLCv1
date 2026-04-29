@@ -470,7 +470,7 @@ img {
     display: block;
   }
   .footer-logos img:last-child {
-    transform: translateX(-14px);
+    transform: translateX(-26px);
   }
 }
 
