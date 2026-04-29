@@ -469,6 +469,9 @@ img {
   .dropdown:hover .dropdown-content {
     display: block;
   }
+  .footer-logos img:last-child {
+    transform: translateX(-14px);
+  }
 }
 
 /* Split Landing for index.html */
