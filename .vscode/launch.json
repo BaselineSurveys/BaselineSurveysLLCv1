@@ -4,11 +4,11 @@
     {
       "type": "chrome",
       "request": "launch",
-    "name": "Launch Opera against localhost",
-    "url": "http://localhost:3000",
+      "name": "Launch Chrome (localhost:3000)",
+      "url": "http://localhost:3000",
       "webRoot": "${workspaceFolder}",
-      "runtimeExecutable": "C:/Users/pjhun/AppData/Local/Programs/Opera/opera.exe",
-      "runtimeArgs": ["--remote-debugging-port=9222"]
+      "runtimeExecutable": "C:/Program Files/Google/Chrome/Application/chrome.exe",
+      "preLaunchTask": "serve"
     }
   ]
 }
