@@ -1,0 +1,10 @@
+# Ignore VS Code temp/debug files
+.vscode/
+.vscode/opera-debug-profile/
+
+# OS junk
+.DS_Store
+Thumbs.db
+
+# Node junk (just in case)
+node_modules/
