@@ -36,6 +36,8 @@ h1, h2, h3 {
 p {
   margin: 0 0 var(--gap) 0;
   color: var(--muted);
+  line-height: 1.7;
+  font-size: 1rem;
 }
 
 a {
@@ -76,6 +78,62 @@ a:hover {
 
 .glass--strong {
   background: var(--panel-strong);
+}
+
+.bio-dropdown-card {
+  margin-top: 1rem;
+  padding: clamp(16px, 2.2vw, 24px);
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+
+.mission-bubble {
+  margin: 0 0 var(--gap) 0;
+  padding: clamp(16px, 2vw, 20px);
+}
+
+.mission-bubble p {
+  margin: 0;
+}
+
+.bio-key-expertise {
+  margin: 1rem 0 0.75rem;
+  padding: clamp(14px, 2vw, 18px);
+  border-radius: calc(var(--radius) - 6px);
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  color: var(--muted);
+  line-height: 1.7;
+}
+
+.bio-dropdown-btn {
+  margin: 0 0 0.75rem 0;
+  padding: 14px 18px;
+  display: inline-block;
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--text);
+  cursor: pointer;
+  border-radius: calc(var(--radius) - 6px);
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.bio-dropdown-btn:hover,
+.bio-dropdown-btn:focus-visible {
+  background: rgba(255, 255, 255, 0.14);
+  transform: translateY(-1px);
+}
+
+.bio-dropdown-content {
+  display: none;
+  color: var(--muted);
+  line-height: 1.7;
+}
+
+.bio-dropdown-content.show {
+  display: block;
 }
 
 header {
@@ -355,7 +413,9 @@ footer p a + a {
 
 .testimonials-subnote {
   margin-top: 10px;
-  color: #555;
+  color: #fff;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
 .utility-section .container {

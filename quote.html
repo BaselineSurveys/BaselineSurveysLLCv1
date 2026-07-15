@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <!-- CAPTCHA START -->
-  <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
+
   <!-- CAPTCHA END -->
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -52,15 +52,17 @@
   <!-- ABOUT: Land Surveying in Colorado (estimates) -->
   <section class="container">
     <h2>About Land Surveying in Colorado</h2>
-    <p>Surveying in Colorado often includes additional considerations such as steep or remote terrain, elevation differences, and seasonal access (snow). These factors can affect the time and cost of a survey. Below are ballpark ranges to help with planning; exact pricing depends on property size, site access, deliverables, and required research.</p>
-    <ul>
-      <li><strong>Boundary Survey (residential):</strong> $600 – $3,500 — small, accessible lots on the low end; steep, rural, heavily wooded, or complicated boundary histories toward the top end.</li>
-      <li><strong>Topographic Survey:</strong> $800 – $4,000 depending on area size and contour detail required.</li>
-      <li><strong>ALTA/NSPS Survey (commercial):</strong> $2,000 – $10,000+ depending on parcel size, title/record research, and lender requirements.</li>
-      <li><strong>Construction Staking:</strong> $1,000 – $7,000+ depending on project scope and duration.</li>
-  <li><em>Additional services</em> like as-built mapping are quoted separately.</li>
-    </ul>
-    <p class="quote-note">Include as much project detail as possible in the form so we can recommend the right survey type and provide an accurate estimate.</p>
+    <div class="glass mission-bubble">
+      <p>Surveying in Colorado often includes additional considerations such as steep or remote terrain, elevation differences, and seasonal access (snow). These factors can affect the time and cost of a survey. Below are ballpark ranges to help with planning; exact pricing depends on property size, site access, deliverables, and required research.</p>
+      <ul>
+        <li><strong>Boundary Survey (residential):</strong> $600 – $3,500 — small, accessible lots on the low end; steep, rural, heavily wooded, or complicated boundary histories toward the top end.</li>
+        <li><strong>Topographic Survey:</strong> $800 – $4,000 depending on area size and contour detail required.</li>
+        <li><strong>ALTA/NSPS Survey (commercial):</strong> $2,000 – $10,000+ depending on parcel size, title/record research, and lender requirements.</li>
+        <li><strong>Construction Staking:</strong> $1,000 – $7,000+ depending on project scope and duration.</li>
+        <li><em>Additional services</em> like as-built mapping are quoted separately.</li>
+      </ul>
+      <p class="quote-note">Include as much project detail as possible in the form so we can recommend the right survey type and provide an accurate estimate.</p>
+    </div>
   </section>
 
   <!-- QUOTE FORM -->
@@ -92,13 +94,7 @@
       <label for="notes">Additional Notes</label><br />
       <textarea id="notes" name="notes" rows="5" placeholder="Tell us more about your project..."></textarea><br />
 
-      <!-- CAPTCHA START -->
-      <div>
-        <div class="cf-turnstile" data-sitekey="0x4AAAAAAAADDPfG9Hj68VdTik"></div>
-      </div>
-      <input type="text" name="_gotcha" hidden title="Leave this field empty" tabindex="-1" autocomplete="off" />
-      <!-- CAPTCHA END -->
-
+      
       <input type="submit" value="Submit Request" class="btn" />
 	  
     <!-- Form Success -->

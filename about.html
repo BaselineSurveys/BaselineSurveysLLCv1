@@ -47,11 +47,13 @@
   <!-- COMPANY HISTORY -->
   <section class="container">
     <h2>Our Mission</h2>
-    <p>
-      At Baseline Land Surveying, our mission is to deliver exceptional surveying services built on accuracy, responsiveness, and local expertise.
-      Based in Breckenridge, we understand the terrain, zoning requirements, and unique challenges of the Rocky Mountain region.
-      We specialize in resort staking, have extensive field experience in resort build environments, and our crew is ready to mobilize when your project is ready.
-    </p>
+    <div class="glass mission-bubble">
+      <p>
+        At Baseline Land Surveying, our mission is to deliver exceptional surveying services built on accuracy, responsiveness, and local expertise.
+        Based in Breckenridge, we understand the terrain, zoning requirements, and unique challenges of the Rocky Mountain region.
+        We specialize in resort staking, have extensive field experience in resort build environments, and our crew is ready to mobilize when your project is ready.
+      </p>
+    </div>
   </section>
 
   <!-- FOUNDER/OWNER -->
@@ -60,14 +62,16 @@
     <p> George Moody, PLS
       
     </p>
-    <button class="bio-dropdown-btn" onclick="document.getElementById('bio-dropdown').classList.toggle('show');">View Full Bio & Experience</button>
-    <div id="bio-dropdown" class="bio-dropdown-content">
+    <div class="bio-key-expertise">
       <strong>Key Expertise</strong><br>
       GPS technology, land development, hydrographic surveying<br>
       Surveying software and equipment: Trimble, Sokkia, AutoCAD Civil 3D, LiDAR, drones<br>
       Asset development, inventory systems, and GPS network management<br>
       Project leadership, team supervision, technical training
-      <br><br>
+    </div>
+    <div class="bio-dropdown-card glass">
+      <h3 class="bio-dropdown-btn" role="button" tabindex="0" onclick="document.getElementById('bio-dropdown').classList.toggle('show');" onkeydown="if (event.key === 'Enter' || event.key === ' ') { event.preventDefault(); this.click(); }">View Full Bio & Experience</h3>
+      <div id="bio-dropdown" class="bio-dropdown-content">
       <span class="bio-heading">🏢 <strong>Leadership Roles</strong></span><br>
       Vice President at Mountain Navigation, Inc.<br>
       Manager of Technology and Assets at LW Survey Engineering and Design Co.<br>
@@ -92,13 +96,14 @@
       Sokkia<br>
       Contract Surveyors Ltd.
       <br><br>
-      <span class="bio-heading">⚙️ <strong>Technical Skills</strong></span><br>
-      GPS systems & software<br>
-      Hydrographic surveying<br>
-      Drone applications (UAS/UAV)<br>
-      LiDAR scanning<br>
-      Boundary surveys, construction staking<br>
-      Technical training and support
+        <span class="bio-heading">⚙️ <strong>Technical Skills</strong></span><br>
+        GPS systems & software<br>
+        Hydrographic surveying<br>
+        Drone applications (UAS/UAV)<br>
+        LiDAR scanning<br>
+        Boundary surveys, construction staking<br>
+        Technical training and support
+      </div>
     </div>
     <script>
       // Close the dropdown if clicked outside
@@ -117,30 +122,34 @@
   <!-- SERVICE AREA -->
   <section class="container">
     <h2>Where We Work</h2>
-    <p>
-      We provide land surveying services across Summit County and neighboring areas, including:
-    </p>
-    <ul>
-      <li>Breckenridge</li>
-      <li>Frisco</li>
-      <li>Dillon</li>
-      <li>Silverthorne</li>
-      <li>Blue River</li>
-      <li>Fairplay</li>
-      <li>Leadville</li>
-	  <li>Grand County</li>
-      <li>Vail and Eagle County</li>
-    </ul>
+    <div class="glass mission-bubble">
+      <p>
+        We provide land surveying services across Summit County and neighboring areas, including:
+      </p>
+      <ul>
+        <li>Breckenridge</li>
+        <li>Frisco</li>
+        <li>Dillon</li>
+        <li>Silverthorne</li>
+        <li>Blue River</li>
+        <li>Fairplay</li>
+        <li>Leadville</li>
+        <li>Grand County</li>
+        <li>Vail and Eagle County</li>
+      </ul>
+    </div>
   </section>
 
   <!-- LICENSES & CREDENTIALS -->
   <section class="container">
     <h2>Licensing & Credentials</h2>
-    <ul>
-      <li>Licensed Professional Land Surveyor (PLS), State of Colorado</li>
-      <li>Fully Insured and Bonded</li>
-      <li>Member – Colorado Association of Land Surveyors (CALS)</li>
-    </ul>
+    <div class="glass mission-bubble">
+      <ul>
+        <li>Licensed Professional Land Surveyor (PLS), State of Colorado</li>
+        <li>Fully Insured and Bonded</li>
+        <li>Member – Colorado Association of Land Surveyors (CALS)</li>
+      </ul>
+    </div>
   </section>
 
   <!-- CALL TO ACTION -->
