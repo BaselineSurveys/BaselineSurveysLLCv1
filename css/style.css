@@ -401,6 +401,14 @@ footer p a + a {
     width: 100%;
     margin-top: 4px;
   }
+
+  .nav-dropdown:hover .dropdown-menu {
+    display: none;
+  }
+
+  .nav-dropdown.open .dropdown-menu {
+    display: block;
+  }
 }
 
 .hero {
@@ -1183,6 +1191,11 @@ img {
   }
 
   .nav-dropdown:hover .dropdown-menu {
+    display: none;
+    max-height: 0;
+  }
+
+  .nav-dropdown.open .dropdown-menu {
     display: block;
     max-height: 500px;
   }
