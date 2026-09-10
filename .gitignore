@@ -8,3 +8,5 @@ Thumbs.db
 
 # Node junk (just in case)
 node_modules/
+old/
+_htmlcheck.js
