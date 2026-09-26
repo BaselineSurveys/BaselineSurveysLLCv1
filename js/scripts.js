@@ -17,6 +17,26 @@ document.addEventListener("DOMContentLoaded", function () {
     const btn = dropdown.querySelector(".nav-main-btn");
     if (!btn) return;
 
+    dropdown.addEventListener("mouseenter", function () {
+      if (!mobileQuery.matches) btn.setAttribute("aria-expanded", "true");
+    });
+
+    dropdown.addEventListener("mouseleave", function () {
+      if (!mobileQuery.matches && !dropdown.contains(document.activeElement)) {
+        btn.setAttribute("aria-expanded", "false");
+      }
+    });
+
+    dropdown.addEventListener("focusin", function () {
+      if (!mobileQuery.matches) btn.setAttribute("aria-expanded", "true");
+    });
+
+    dropdown.addEventListener("focusout", function (event) {
+      if (!mobileQuery.matches && !dropdown.contains(event.relatedTarget) && !dropdown.matches(":hover")) {
+        btn.setAttribute("aria-expanded", "false");
+      }
+    });
+
     btn.addEventListener("click", function (event) {
       // Desktop: hover already reveals the submenu, let the link navigate normally.
       if (!mobileQuery.matches) return;

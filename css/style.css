@@ -110,6 +110,7 @@ a:hover {
   margin: 0 0 0.75rem 0;
   padding: 14px 18px;
   display: inline-block;
+  font-family: inherit;
   font-size: 1.05rem;
   font-weight: 600;
   color: var(--text);
@@ -177,6 +178,10 @@ footer p a + a {
   justify-content: space-between;
   align-items: center;
   padding: var(--pad);
+}
+
+.nav-hidden {
+  display: none;
 }
 
 .logo {
@@ -330,7 +335,8 @@ footer p a + a {
   outline-offset: -2px;
 }
 
-.nav-dropdown:hover .dropdown-menu {
+.nav-dropdown:hover .dropdown-menu,
+.nav-dropdown:focus-within .dropdown-menu {
   display: block;
 }
 
@@ -446,6 +452,55 @@ footer p a + a {
 
 .hero--utility {
   background-image: url('../images/image7.jpeg');
+}
+
+.county-hero {
+  background-size: cover;
+  background-position: center 50%;
+}
+
+.county-hero::before {
+  background: linear-gradient(to bottom, rgba(15, 19, 23, 0.34), rgba(15, 19, 23, 0.58));
+}
+
+.county-hero--chaffee {
+  background-image: url('../images/ChaffeeImage.jpeg');
+  background-position: center 46%;
+}
+
+.county-hero--clear-creek {
+  background-image: url('../images/ClearCreekImage.jpeg');
+  background-position: center 48%;
+}
+
+.county-hero--eagle {
+  background-image: url('../images/EagleImage.jpeg');
+  background-position: center 48%;
+}
+
+.county-hero--grand {
+  background-image: url('../images/GrandImage.jpeg');
+  background-position: center 52%;
+}
+
+.county-hero--jefferson {
+  background-image: url('../images/JeffersonImage.jpeg');
+  background-position: center 50%;
+}
+
+.county-hero--lake {
+  background-image: url('../images/LakeImage.jpeg');
+  background-position: center 50%;
+}
+
+.county-hero--park {
+  background-image: url('../images/ParkImage.jpeg');
+  background-position: center 52%;
+}
+
+.county-hero--summit {
+  background-image: url('../images/SummitImage.jpeg');
+  background-position: center 52%;
 }
 
 .hero::before {
@@ -906,6 +961,20 @@ img {
   padding: var(--pad);
 }
 
+.page-careers .career-role-details {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: var(--pad);
+}
+
+.page-careers .career-role-details p {
+  margin: 0;
+  padding: clamp(16px, 2vw, 24px);
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+}
+
 .page-careers h2 {
   text-align: center;
   margin-bottom: var(--gap);
@@ -1274,6 +1343,38 @@ img {
   .hero {
     min-height: 36vh;
   }
+
+  .county-hero--chaffee {
+    background-position: center 44%;
+  }
+
+  .county-hero--clear-creek {
+    background-position: center 48%;
+  }
+
+  .county-hero--eagle {
+    background-position: center 45%;
+  }
+
+  .county-hero--grand {
+    background-position: center 52%;
+  }
+
+  .county-hero--jefferson {
+    background-position: center 50%;
+  }
+
+  .county-hero--lake {
+    background-position: center 48%;
+  }
+
+  .county-hero--park {
+    background-position: center 50%;
+  }
+
+  .county-hero--summit {
+    background-position: center 54%;
+  }
 }
 
 @media (max-width: 480px) {
@@ -1323,6 +1424,10 @@ img {
   align-items: center;
   justify-content: center;
   padding: var(--pad);
+  background-image: linear-gradient(to bottom, rgba(15, 19, 23, 0.28), rgba(15, 19, 23, 0.56)), url('../images/navigationImage1.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .nav-page-inner {
@@ -1407,8 +1512,9 @@ img {
 /* RESPONSIVE: Medium screens */
 @media (max-width: 768px) {
   .nav-page-content {
-    min-height: auto;
+    min-height: 0;
     padding: calc(var(--gap) * 1.5);
+    background-position: center 56%;
   }
 
   .nav-page-heading {
@@ -1468,6 +1574,12 @@ img {
     font-size: 0.9rem;
     min-width: auto;
     width: 100%;
+  }
+
+  .nav-choice-btn:last-child:nth-child(odd) {
+    grid-column: 1 / -1;
+    justify-self: center;
+    width: min(100%, 200px);
   }
 }
 
