@@ -1583,3 +1583,89 @@ img {
   }
 }
 
+/* Responsive WebP backgrounds; the plain url() rules above remain as fallback. */
+@media (max-width: 480px) {
+  .hero--about { background-image: image-set(url("../images/optimized/image10-960.webp") type("image/webp") 1x, url("../images/optimized/image10-960.webp") type("image/webp") 2x, url("../images/optimized/image10-1440.webp") type("image/webp") 3x); }
+  .hero--careers { background-image: image-set(url("../images/optimized/image4-960.webp") type("image/webp") 1x, url("../images/optimized/image4-960.webp") type("image/webp") 2x, url("../images/optimized/image4-1440.webp") type("image/webp") 3x); }
+  .hero--contact { background-image: image-set(url("../images/optimized/image9-960.webp") type("image/webp") 1x, url("../images/optimized/image9-960.webp") type("image/webp") 2x, url("../images/optimized/image9-1440.webp") type("image/webp") 3x); }
+  .hero--services { background-image: image-set(url("../images/optimized/image8-960.webp") type("image/webp") 1x, url("../images/optimized/image8-960.webp") type("image/webp") 2x, url("../images/optimized/image8-1440.webp") type("image/webp") 3x); }
+  .hero--testimonials { background-image: image-set(url("../images/optimized/image9-960.webp") type("image/webp") 1x, url("../images/optimized/image9-960.webp") type("image/webp") 2x, url("../images/optimized/image9-1440.webp") type("image/webp") 3x); }
+  .hero--utility { background-image: image-set(url("../images/optimized/image7-960.webp") type("image/webp") 1x, url("../images/optimized/image7-960.webp") type("image/webp") 2x, url("../images/optimized/image7-1440.webp") type("image/webp") 3x); }
+  .county-hero--chaffee { background-image: image-set(url("../images/optimized/ChaffeeImage-960.webp") type("image/webp") 1x, url("../images/optimized/ChaffeeImage-960.webp") type("image/webp") 2x, url("../images/optimized/ChaffeeImage-1440.webp") type("image/webp") 3x); }
+  .county-hero--clear-creek { background-image: image-set(url("../images/optimized/ClearCreekImage-960.webp") type("image/webp") 1x, url("../images/optimized/ClearCreekImage-960.webp") type("image/webp") 2x, url("../images/optimized/ClearCreekImage-1440.webp") type("image/webp") 3x); }
+  .county-hero--eagle { background-image: image-set(url("../images/optimized/EagleImage-960.webp") type("image/webp") 1x, url("../images/optimized/EagleImage-960.webp") type("image/webp") 2x, url("../images/optimized/EagleImage-1440.webp") type("image/webp") 3x); }
+  .county-hero--grand { background-image: image-set(url("../images/optimized/GrandImage-960.webp") type("image/webp") 1x, url("../images/optimized/GrandImage-960.webp") type("image/webp") 2x, url("../images/optimized/GrandImage-1440.webp") type("image/webp") 3x); }
+  .county-hero--jefferson { background-image: image-set(url("../images/optimized/JeffersonImage-960.webp") type("image/webp") 1x, url("../images/optimized/JeffersonImage-960.webp") type("image/webp") 2x, url("../images/optimized/JeffersonImage-1440.webp") type("image/webp") 3x); }
+  .county-hero--lake { background-image: image-set(url("../images/optimized/LakeImage-960.webp") type("image/webp") 1x, url("../images/optimized/LakeImage-960.webp") type("image/webp") 2x, url("../images/optimized/LakeImage-1440.webp") type("image/webp") 3x); }
+  .county-hero--park { background-image: image-set(url("../images/optimized/ParkImage-960.webp") type("image/webp") 1x, url("../images/optimized/ParkImage-960.webp") type("image/webp") 2x, url("../images/optimized/ParkImage-1440.webp") type("image/webp") 3x); }
+  .county-hero--summit { background-image: image-set(url("../images/optimized/SummitImage-960.webp") type("image/webp") 1x, url("../images/optimized/SummitImage-960.webp") type("image/webp") 2x, url("../images/optimized/SummitImage-1440.webp") type("image/webp") 3x); }
+  .nav-page-content { background-image: linear-gradient(to bottom, rgba(15, 19, 23, 0.28), rgba(15, 19, 23, 0.56)), image-set(url("../images/optimized/navigationImage1-836.webp") type("image/webp") 1x, url("../images/optimized/navigationImage1-1672.webp") type("image/webp") 2x, url("../images/optimized/navigationImage1-1672.webp") type("image/webp") 3x); }
+}
+@media (min-width: 481px) and (max-width: 800px) {
+  .hero--about { background-image: image-set(url("../images/optimized/image10-960.webp") type("image/webp") 1x, url("../images/optimized/image10-1920.webp") type("image/webp") 2x, url("../images/optimized/image10-2880.webp") type("image/webp") 3x); }
+  .hero--careers { background-image: image-set(url("../images/optimized/image4-960.webp") type("image/webp") 1x, url("../images/optimized/image4-1920.webp") type("image/webp") 2x, url("../images/optimized/image4-2880.webp") type("image/webp") 3x); }
+  .hero--contact { background-image: image-set(url("../images/optimized/image9-960.webp") type("image/webp") 1x, url("../images/optimized/image9-1920.webp") type("image/webp") 2x, url("../images/optimized/image9-2880.webp") type("image/webp") 3x); }
+  .hero--services { background-image: image-set(url("../images/optimized/image8-960.webp") type("image/webp") 1x, url("../images/optimized/image8-1920.webp") type("image/webp") 2x, url("../images/optimized/image8-2880.webp") type("image/webp") 3x); }
+  .hero--testimonials { background-image: image-set(url("../images/optimized/image9-960.webp") type("image/webp") 1x, url("../images/optimized/image9-1920.webp") type("image/webp") 2x, url("../images/optimized/image9-2880.webp") type("image/webp") 3x); }
+  .hero--utility { background-image: image-set(url("../images/optimized/image7-960.webp") type("image/webp") 1x, url("../images/optimized/image7-1920.webp") type("image/webp") 2x, url("../images/image7.jpeg") type("image/jpeg") 3x); }
+  .county-hero--chaffee { background-image: image-set(url("../images/optimized/ChaffeeImage-960.webp") type("image/webp") 1x, url("../images/ChaffeeImage.jpeg") type("image/jpeg") 2x, url("../images/ChaffeeImage.jpeg") type("image/jpeg") 3x); }
+  .county-hero--clear-creek { background-image: image-set(url("../images/optimized/ClearCreekImage-960.webp") type("image/webp") 1x, url("../images/ClearCreekImage.jpeg") type("image/jpeg") 2x, url("../images/ClearCreekImage.jpeg") type("image/jpeg") 3x); }
+  .county-hero--eagle { background-image: image-set(url("../images/optimized/EagleImage-960.webp") type("image/webp") 1x, url("../images/EagleImage.jpeg") type("image/jpeg") 2x, url("../images/EagleImage.jpeg") type("image/jpeg") 3x); }
+  .county-hero--grand { background-image: image-set(url("../images/optimized/GrandImage-960.webp") type("image/webp") 1x, url("../images/GrandImage.jpeg") type("image/jpeg") 2x, url("../images/GrandImage.jpeg") type("image/jpeg") 3x); }
+  .county-hero--jefferson { background-image: image-set(url("../images/optimized/JeffersonImage-960.webp") type("image/webp") 1x, url("../images/JeffersonImage.jpeg") type("image/jpeg") 2x, url("../images/JeffersonImage.jpeg") type("image/jpeg") 3x); }
+  .county-hero--lake { background-image: image-set(url("../images/optimized/LakeImage-960.webp") type("image/webp") 1x, url("../images/LakeImage.jpeg") type("image/jpeg") 2x, url("../images/LakeImage.jpeg") type("image/jpeg") 3x); }
+  .county-hero--park { background-image: image-set(url("../images/optimized/ParkImage-960.webp") type("image/webp") 1x, url("../images/ParkImage.jpeg") type("image/jpeg") 2x, url("../images/ParkImage.jpeg") type("image/jpeg") 3x); }
+  .county-hero--summit { background-image: image-set(url("../images/optimized/SummitImage-960.webp") type("image/webp") 1x, url("../images/SummitImage.jpeg") type("image/jpeg") 2x, url("../images/SummitImage.jpeg") type("image/jpeg") 3x); }
+  .nav-page-content { background-image: linear-gradient(to bottom, rgba(15, 19, 23, 0.28), rgba(15, 19, 23, 0.56)), image-set(url("../images/optimized/navigationImage1-836.webp") type("image/webp") 1x, url("../images/optimized/navigationImage1-1672.webp") type("image/webp") 2x, url("../images/optimized/navigationImage1-1672.webp") type("image/webp") 3x); }
+}
+@media (min-width: 801px) and (max-width: 1280px) {
+  .hero--about { background-image: image-set(url("../images/optimized/image10-1440.webp") type("image/webp") 1x, url("../images/optimized/image10-2880.webp") type("image/webp") 2x); }
+  .hero--careers { background-image: image-set(url("../images/optimized/image4-1440.webp") type("image/webp") 1x, url("../images/optimized/image4-2880.webp") type("image/webp") 2x); }
+  .hero--contact { background-image: image-set(url("../images/optimized/image9-1440.webp") type("image/webp") 1x, url("../images/optimized/image9-2880.webp") type("image/webp") 2x); }
+  .hero--services { background-image: image-set(url("../images/optimized/image8-1440.webp") type("image/webp") 1x, url("../images/optimized/image8-2880.webp") type("image/webp") 2x); }
+  .hero--testimonials { background-image: image-set(url("../images/optimized/image9-1440.webp") type("image/webp") 1x, url("../images/optimized/image9-2880.webp") type("image/webp") 2x); }
+  .hero--utility { background-image: image-set(url("../images/optimized/image7-1440.webp") type("image/webp") 1x, url("../images/image7.jpeg") type("image/jpeg") 2x); }
+  .county-hero--chaffee { background-image: image-set(url("../images/optimized/ChaffeeImage-1440.webp") type("image/webp") 1x, url("../images/ChaffeeImage.jpeg") type("image/jpeg") 2x); }
+  .county-hero--clear-creek { background-image: image-set(url("../images/optimized/ClearCreekImage-1440.webp") type("image/webp") 1x, url("../images/ClearCreekImage.jpeg") type("image/jpeg") 2x); }
+  .county-hero--eagle { background-image: image-set(url("../images/optimized/EagleImage-1440.webp") type("image/webp") 1x, url("../images/EagleImage.jpeg") type("image/jpeg") 2x); }
+  .county-hero--grand { background-image: image-set(url("../images/optimized/GrandImage-1440.webp") type("image/webp") 1x, url("../images/GrandImage.jpeg") type("image/jpeg") 2x); }
+  .county-hero--jefferson { background-image: image-set(url("../images/optimized/JeffersonImage-1440.webp") type("image/webp") 1x, url("../images/JeffersonImage.jpeg") type("image/jpeg") 2x); }
+  .county-hero--lake { background-image: image-set(url("../images/optimized/LakeImage-1440.webp") type("image/webp") 1x, url("../images/LakeImage.jpeg") type("image/jpeg") 2x); }
+  .county-hero--park { background-image: image-set(url("../images/optimized/ParkImage-1440.webp") type("image/webp") 1x, url("../images/ParkImage.jpeg") type("image/jpeg") 2x); }
+  .county-hero--summit { background-image: image-set(url("../images/optimized/SummitImage-1440.webp") type("image/webp") 1x, url("../images/SummitImage.jpeg") type("image/jpeg") 2x); }
+  .nav-page-content { background-image: linear-gradient(to bottom, rgba(15, 19, 23, 0.28), rgba(15, 19, 23, 0.56)), image-set(url("../images/optimized/navigationImage1-1672.webp") type("image/webp") 1x, url("../images/optimized/navigationImage1-1672.webp") type("image/webp") 2x); }
+}
+@media (min-width: 1281px) and (max-width: 1920px) {
+  .hero--about { background-image: image-set(url("../images/optimized/image10-1920.webp") type("image/webp") 1x, url("../images/image10.jpeg") type("image/jpeg") 2x); }
+  .hero--careers { background-image: image-set(url("../images/optimized/image4-1920.webp") type("image/webp") 1x, url("../images/image4.jpeg") type("image/jpeg") 2x); }
+  .hero--contact { background-image: image-set(url("../images/optimized/image9-1920.webp") type("image/webp") 1x, url("../images/image9.jpeg") type("image/jpeg") 2x); }
+  .hero--services { background-image: image-set(url("../images/optimized/image8-1920.webp") type("image/webp") 1x, url("../images/image8.jpeg") type("image/jpeg") 2x); }
+  .hero--testimonials { background-image: image-set(url("../images/optimized/image9-1920.webp") type("image/webp") 1x, url("../images/image9.jpeg") type("image/jpeg") 2x); }
+  .hero--utility { background-image: image-set(url("../images/optimized/image7-1920.webp") type("image/webp") 1x, url("../images/image7.jpeg") type("image/jpeg") 2x); }
+  .county-hero--chaffee { background-image: image-set(url("../images/ChaffeeImage.jpeg") type("image/jpeg") 1x, url("../images/ChaffeeImage.jpeg") type("image/jpeg") 2x); }
+  .county-hero--clear-creek { background-image: image-set(url("../images/ClearCreekImage.jpeg") type("image/jpeg") 1x, url("../images/ClearCreekImage.jpeg") type("image/jpeg") 2x); }
+  .county-hero--eagle { background-image: image-set(url("../images/EagleImage.jpeg") type("image/jpeg") 1x, url("../images/EagleImage.jpeg") type("image/jpeg") 2x); }
+  .county-hero--grand { background-image: image-set(url("../images/GrandImage.jpeg") type("image/jpeg") 1x, url("../images/GrandImage.jpeg") type("image/jpeg") 2x); }
+  .county-hero--jefferson { background-image: image-set(url("../images/JeffersonImage.jpeg") type("image/jpeg") 1x, url("../images/JeffersonImage.jpeg") type("image/jpeg") 2x); }
+  .county-hero--lake { background-image: image-set(url("../images/LakeImage.jpeg") type("image/jpeg") 1x, url("../images/LakeImage.jpeg") type("image/jpeg") 2x); }
+  .county-hero--park { background-image: image-set(url("../images/ParkImage.jpeg") type("image/jpeg") 1x, url("../images/ParkImage.jpeg") type("image/jpeg") 2x); }
+  .county-hero--summit { background-image: image-set(url("../images/SummitImage.jpeg") type("image/jpeg") 1x, url("../images/SummitImage.jpeg") type("image/jpeg") 2x); }
+  .nav-page-content { background-image: linear-gradient(to bottom, rgba(15, 19, 23, 0.28), rgba(15, 19, 23, 0.56)), image-set(url("../images/optimized/navigationImage1-1672.webp") type("image/webp") 1x, url("../images/optimized/navigationImage1-1672.webp") type("image/webp") 2x); }
+}
+@media (min-width: 1921px) {
+  .hero--about { background-image: image-set(url("../images/optimized/image10-2880.webp") type("image/webp") 1x, url("../images/image10.jpeg") type("image/jpeg") 2x); }
+  .hero--careers { background-image: image-set(url("../images/optimized/image4-2880.webp") type("image/webp") 1x, url("../images/image4.jpeg") type("image/jpeg") 2x); }
+  .hero--contact { background-image: image-set(url("../images/optimized/image9-2880.webp") type("image/webp") 1x, url("../images/image9.jpeg") type("image/jpeg") 2x); }
+  .hero--services { background-image: image-set(url("../images/optimized/image8-2880.webp") type("image/webp") 1x, url("../images/image8.jpeg") type("image/jpeg") 2x); }
+  .hero--testimonials { background-image: image-set(url("../images/optimized/image9-2880.webp") type("image/webp") 1x, url("../images/image9.jpeg") type("image/jpeg") 2x); }
+  .hero--utility { background-image: image-set(url("../images/image7.jpeg") type("image/jpeg") 1x, url("../images/image7.jpeg") type("image/jpeg") 2x); }
+  .county-hero--chaffee { background-image: image-set(url("../images/ChaffeeImage.jpeg") type("image/jpeg") 1x, url("../images/ChaffeeImage.jpeg") type("image/jpeg") 2x); }
+  .county-hero--clear-creek { background-image: image-set(url("../images/ClearCreekImage.jpeg") type("image/jpeg") 1x, url("../images/ClearCreekImage.jpeg") type("image/jpeg") 2x); }
+  .county-hero--eagle { background-image: image-set(url("../images/EagleImage.jpeg") type("image/jpeg") 1x, url("../images/EagleImage.jpeg") type("image/jpeg") 2x); }
+  .county-hero--grand { background-image: image-set(url("../images/GrandImage.jpeg") type("image/jpeg") 1x, url("../images/GrandImage.jpeg") type("image/jpeg") 2x); }
+  .county-hero--jefferson { background-image: image-set(url("../images/JeffersonImage.jpeg") type("image/jpeg") 1x, url("../images/JeffersonImage.jpeg") type("image/jpeg") 2x); }
+  .county-hero--lake { background-image: image-set(url("../images/LakeImage.jpeg") type("image/jpeg") 1x, url("../images/LakeImage.jpeg") type("image/jpeg") 2x); }
+  .county-hero--park { background-image: image-set(url("../images/ParkImage.jpeg") type("image/jpeg") 1x, url("../images/ParkImage.jpeg") type("image/jpeg") 2x); }
+  .county-hero--summit { background-image: image-set(url("../images/SummitImage.jpeg") type("image/jpeg") 1x, url("../images/SummitImage.jpeg") type("image/jpeg") 2x); }
+  .nav-page-content { background-image: linear-gradient(to bottom, rgba(15, 19, 23, 0.28), rgba(15, 19, 23, 0.56)), image-set(url("../images/optimized/navigationImage1-1672.webp") type("image/webp") 1x, url("../images/optimized/navigationImage1-1672.webp") type("image/webp") 2x); }
+}
