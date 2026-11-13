@@ -442,7 +442,8 @@ footer p a + a {
 }
 
 .hero--services {
-  background-image: url('../images/image8.jpeg');
+  background-image: url('../images/image8-upright.jpeg');
+  background-position: center;
 }
 
 .hero--testimonials {
@@ -1588,7 +1589,7 @@ img {
   .hero--about { background-image: image-set(url("../images/optimized/image10-960.webp") type("image/webp") 1x, url("../images/optimized/image10-960.webp") type("image/webp") 2x, url("../images/optimized/image10-1440.webp") type("image/webp") 3x); }
   .hero--careers { background-image: image-set(url("../images/optimized/image4-960.webp") type("image/webp") 1x, url("../images/optimized/image4-960.webp") type("image/webp") 2x, url("../images/optimized/image4-1440.webp") type("image/webp") 3x); }
   .hero--contact { background-image: image-set(url("../images/optimized/image9-960.webp") type("image/webp") 1x, url("../images/optimized/image9-960.webp") type("image/webp") 2x, url("../images/optimized/image9-1440.webp") type("image/webp") 3x); }
-  .hero--services { background-image: image-set(url("../images/optimized/image8-960.webp") type("image/webp") 1x, url("../images/optimized/image8-960.webp") type("image/webp") 2x, url("../images/optimized/image8-1440.webp") type("image/webp") 3x); }
+  .hero--services { background-image: image-set(url("../images/optimized/image8-upright-960.webp") type("image/webp") 1x, url("../images/optimized/image8-upright-960.webp") type("image/webp") 2x, url("../images/optimized/image8-upright-1440.webp") type("image/webp") 3x); }
   .hero--testimonials { background-image: image-set(url("../images/optimized/image9-960.webp") type("image/webp") 1x, url("../images/optimized/image9-960.webp") type("image/webp") 2x, url("../images/optimized/image9-1440.webp") type("image/webp") 3x); }
   .hero--utility { background-image: image-set(url("../images/optimized/image7-960.webp") type("image/webp") 1x, url("../images/optimized/image7-960.webp") type("image/webp") 2x, url("../images/optimized/image7-1440.webp") type("image/webp") 3x); }
   .county-hero--chaffee { background-image: image-set(url("../images/optimized/ChaffeeImage-960.webp") type("image/webp") 1x, url("../images/optimized/ChaffeeImage-960.webp") type("image/webp") 2x, url("../images/optimized/ChaffeeImage-1440.webp") type("image/webp") 3x); }
@@ -1605,7 +1606,7 @@ img {
   .hero--about { background-image: image-set(url("../images/optimized/image10-960.webp") type("image/webp") 1x, url("../images/optimized/image10-1920.webp") type("image/webp") 2x, url("../images/optimized/image10-2880.webp") type("image/webp") 3x); }
   .hero--careers { background-image: image-set(url("../images/optimized/image4-960.webp") type("image/webp") 1x, url("../images/optimized/image4-1920.webp") type("image/webp") 2x, url("../images/optimized/image4-2880.webp") type("image/webp") 3x); }
   .hero--contact { background-image: image-set(url("../images/optimized/image9-960.webp") type("image/webp") 1x, url("../images/optimized/image9-1920.webp") type("image/webp") 2x, url("../images/optimized/image9-2880.webp") type("image/webp") 3x); }
-  .hero--services { background-image: image-set(url("../images/optimized/image8-960.webp") type("image/webp") 1x, url("../images/optimized/image8-1920.webp") type("image/webp") 2x, url("../images/optimized/image8-2880.webp") type("image/webp") 3x); }
+  .hero--services { background-image: image-set(url("../images/optimized/image8-upright-960.webp") type("image/webp") 1x, url("../images/optimized/image8-upright-1920.webp") type("image/webp") 2x, url("../images/optimized/image8-upright-2880.webp") type("image/webp") 3x); }
   .hero--testimonials { background-image: image-set(url("../images/optimized/image9-960.webp") type("image/webp") 1x, url("../images/optimized/image9-1920.webp") type("image/webp") 2x, url("../images/optimized/image9-2880.webp") type("image/webp") 3x); }
   .hero--utility { background-image: image-set(url("../images/optimized/image7-960.webp") type("image/webp") 1x, url("../images/optimized/image7-1920.webp") type("image/webp") 2x, url("../images/image7.jpeg") type("image/jpeg") 3x); }
   .county-hero--chaffee { background-image: image-set(url("../images/optimized/ChaffeeImage-960.webp") type("image/webp") 1x, url("../images/ChaffeeImage.jpeg") type("image/jpeg") 2x, url("../images/ChaffeeImage.jpeg") type("image/jpeg") 3x); }
@@ -1622,7 +1623,7 @@ img {
   .hero--about { background-image: image-set(url("../images/optimized/image10-1440.webp") type("image/webp") 1x, url("../images/optimized/image10-2880.webp") type("image/webp") 2x); }
   .hero--careers { background-image: image-set(url("../images/optimized/image4-1440.webp") type("image/webp") 1x, url("../images/optimized/image4-2880.webp") type("image/webp") 2x); }
   .hero--contact { background-image: image-set(url("../images/optimized/image9-1440.webp") type("image/webp") 1x, url("../images/optimized/image9-2880.webp") type("image/webp") 2x); }
-  .hero--services { background-image: image-set(url("../images/optimized/image8-1440.webp") type("image/webp") 1x, url("../images/optimized/image8-2880.webp") type("image/webp") 2x); }
+  .hero--services { background-image: image-set(url("../images/optimized/image8-upright-1440.webp") type("image/webp") 1x, url("../images/optimized/image8-upright-2880.webp") type("image/webp") 2x); }
   .hero--testimonials { background-image: image-set(url("../images/optimized/image9-1440.webp") type("image/webp") 1x, url("../images/optimized/image9-2880.webp") type("image/webp") 2x); }
   .hero--utility { background-image: image-set(url("../images/optimized/image7-1440.webp") type("image/webp") 1x, url("../images/image7.jpeg") type("image/jpeg") 2x); }
   .county-hero--chaffee { background-image: image-set(url("../images/optimized/ChaffeeImage-1440.webp") type("image/webp") 1x, url("../images/ChaffeeImage.jpeg") type("image/jpeg") 2x); }
@@ -1639,7 +1640,7 @@ img {
   .hero--about { background-image: image-set(url("../images/optimized/image10-1920.webp") type("image/webp") 1x, url("../images/image10.jpeg") type("image/jpeg") 2x); }
   .hero--careers { background-image: image-set(url("../images/optimized/image4-1920.webp") type("image/webp") 1x, url("../images/image4.jpeg") type("image/jpeg") 2x); }
   .hero--contact { background-image: image-set(url("../images/optimized/image9-1920.webp") type("image/webp") 1x, url("../images/image9.jpeg") type("image/jpeg") 2x); }
-  .hero--services { background-image: image-set(url("../images/optimized/image8-1920.webp") type("image/webp") 1x, url("../images/image8.jpeg") type("image/jpeg") 2x); }
+  .hero--services { background-image: image-set(url("../images/optimized/image8-upright-1920.webp") type("image/webp") 1x, url("../images/image8-upright.jpeg") type("image/jpeg") 2x); }
   .hero--testimonials { background-image: image-set(url("../images/optimized/image9-1920.webp") type("image/webp") 1x, url("../images/image9.jpeg") type("image/jpeg") 2x); }
   .hero--utility { background-image: image-set(url("../images/optimized/image7-1920.webp") type("image/webp") 1x, url("../images/image7.jpeg") type("image/jpeg") 2x); }
   .county-hero--chaffee { background-image: image-set(url("../images/ChaffeeImage.jpeg") type("image/jpeg") 1x, url("../images/ChaffeeImage.jpeg") type("image/jpeg") 2x); }
@@ -1656,7 +1657,7 @@ img {
   .hero--about { background-image: image-set(url("../images/optimized/image10-2880.webp") type("image/webp") 1x, url("../images/image10.jpeg") type("image/jpeg") 2x); }
   .hero--careers { background-image: image-set(url("../images/optimized/image4-2880.webp") type("image/webp") 1x, url("../images/image4.jpeg") type("image/jpeg") 2x); }
   .hero--contact { background-image: image-set(url("../images/optimized/image9-2880.webp") type("image/webp") 1x, url("../images/image9.jpeg") type("image/jpeg") 2x); }
-  .hero--services { background-image: image-set(url("../images/optimized/image8-2880.webp") type("image/webp") 1x, url("../images/image8.jpeg") type("image/jpeg") 2x); }
+  .hero--services { background-image: image-set(url("../images/optimized/image8-upright-2880.webp") type("image/webp") 1x, url("../images/image8-upright.jpeg") type("image/jpeg") 2x); }
   .hero--testimonials { background-image: image-set(url("../images/optimized/image9-2880.webp") type("image/webp") 1x, url("../images/image9.jpeg") type("image/jpeg") 2x); }
   .hero--utility { background-image: image-set(url("../images/image7.jpeg") type("image/jpeg") 1x, url("../images/image7.jpeg") type("image/jpeg") 2x); }
   .county-hero--chaffee { background-image: image-set(url("../images/ChaffeeImage.jpeg") type("image/jpeg") 1x, url("../images/ChaffeeImage.jpeg") type("image/jpeg") 2x); }
